@@ -44,11 +44,8 @@ static NSString *const cellReuserID = @"cellReuserID";
     [self.view addSubview:self.tableView];
     self.tableView.dataSource = self.dataSource;
     self.tableView.delegate = self.dataSource;
-    
     self.pt.delegate = self;
-    
 }
-
 - (UITableView *)tableView{
     if (!_tableView) {
         _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
