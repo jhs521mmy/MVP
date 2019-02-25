@@ -21,6 +21,8 @@
 		B46955F0221EDEC8003A44A5 /* Present.m in Sources */ = {isa = PBXBuildFile; fileRef = B46955EF221EDEC8003A44A5 /* Present.m */; };
 		B46955F3221EE03A003A44A5 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = B46955F2221EE03A003A44A5 /* Model.m */; };
 		B46955F6221EE077003A44A5 /* MVPTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B46955F5221EE077003A44A5 /* MVPTableViewCell.m */; };
+		B4695628222392E4003A44A5 /* MVVMViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B4695624222392E3003A44A5 /* MVVMViewModel.m */; };
+		B4695629222392E4003A44A5 /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B4695625222392E3003A44A5 /* BaseViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,10 @@
 		B46955F4221EE077003A44A5 /* MVPTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVPTableViewCell.h; sourceTree = "<group>"; };
 		B46955F5221EE077003A44A5 /* MVPTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVPTableViewCell.m; sourceTree = "<group>"; };
 		B46955FB221FDA06003A44A5 /* PresentProtocolDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PresentProtocolDelegate.h; sourceTree = "<group>"; };
+		B4695624222392E3003A44A5 /* MVVMViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVVMViewModel.m; sourceTree = "<group>"; };
+		B4695625222392E3003A44A5 /* BaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewModel.m; sourceTree = "<group>"; };
+		B4695626222392E3003A44A5 /* MVVMViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVVMViewModel.h; sourceTree = "<group>"; };
+		B4695627222392E3003A44A5 /* BaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewModel.h; sourceTree = "<group>"; };
 		C2E67502EA60ECBB6A68259C /* libPods-MVP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MVP.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF057A7E5C3011A460857CC9 /* Pods-MVP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVP.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVP/Pods-MVP.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -145,6 +151,7 @@
 				B4695599221D3DFB003A44A5 /* AppDelegate.m */,
 				B469559B221D3DFB003A44A5 /* ViewController.h */,
 				B469559C221D3DFB003A44A5 /* ViewController.m */,
+				B46956232223920E003A44A5 /* mvvm */,
 				B46955CE221DA650003A44A5 /* common */,
 				B46955CA221D4A53003A44A5 /* mvp */,
 				B469559E221D3DFB003A44A5 /* Main.storyboard */,
@@ -197,6 +204,17 @@
 				B46955FB221FDA06003A44A5 /* PresentProtocolDelegate.h */,
 			);
 			path = common;
+			sourceTree = "<group>";
+		};
+		B46956232223920E003A44A5 /* mvvm */ = {
+			isa = PBXGroup;
+			children = (
+				B4695627222392E3003A44A5 /* BaseViewModel.h */,
+				B4695625222392E3003A44A5 /* BaseViewModel.m */,
+				B4695626222392E3003A44A5 /* MVVMViewModel.h */,
+				B4695624222392E3003A44A5 /* MVVMViewModel.m */,
+			);
+			path = mvvm;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,12 +371,14 @@
 			files = (
 				B46955CD221D508B003A44A5 /* MVPViewController.m in Sources */,
 				B469559D221D3DFB003A44A5 /* ViewController.m in Sources */,
+				B4695628222392E4003A44A5 /* MVVMViewModel.m in Sources */,
 				B46955D1221DA68B003A44A5 /* JAFTableViewDataSource.m in Sources */,
 				B46955F6221EE077003A44A5 /* MVPTableViewCell.m in Sources */,
 				B46955F0221EDEC8003A44A5 /* Present.m in Sources */,
 				B46955F3221EE03A003A44A5 /* Model.m in Sources */,
 				B46955A8221D3DFC003A44A5 /* main.m in Sources */,
 				B469559A221D3DFB003A44A5 /* AppDelegate.m in Sources */,
+				B4695629222392E4003A44A5 /* BaseViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

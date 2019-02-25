@@ -77,7 +77,6 @@
         [self.delegate didClickWithNum:self.numLabel.text indexPathRow:self.indexPath];
     }
 }
-
 #pragma mark - LAZY
 
 - (UILabel *)numLabel{
