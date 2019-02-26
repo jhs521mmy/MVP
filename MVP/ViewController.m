@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "MVPViewController.h"
+#import "MVVMViewController.h"
 @interface ViewController ()
 
 @end
@@ -16,8 +17,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //[[MVPViewController alloc]init]  ---  mvp
+    //[[MVPViewController alloc]init]
+    [self.navigationController pushViewController:[[MVVMViewController alloc]init] animated:NO];
     
-    [self.navigationController pushViewController:[[MVPViewController alloc]init] animated:NO];
+    
     
 }
 
