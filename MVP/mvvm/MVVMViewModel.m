@@ -23,7 +23,6 @@
 
 - (instancetype)init{
     if (self==[super init]) {
-        [self loadData];
         [self addObserver:self forKeyPath:@"contentKey" options:(NSKeyValueObservingOptionNew) context:nil];
     }
     return self;

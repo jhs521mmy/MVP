@@ -45,6 +45,8 @@ static NSString *const cellReuserID = @"cellReuserID";
        
         
     }];
+   //加载数据
+    [self.vm loadData];
  
 }
 - (UITableView *)tableView{
